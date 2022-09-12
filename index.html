@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="icons/logo.svg" alt="logo">
+        <h1>sample</h1>
+    </header>
+
+    <nav id="sideMenu">
+        <button v-for="button in buttons">{{button.message}}</button> 
+    </nav>
+
+    <main id="home">
+        <div v-for="(post, index) in posts">
+            <div class="post">
+                <a :href="getImageByIndex(index)">
+                    <img :src="getImageByIndex(index)" class="imgnahui">
+                </a>
+                
+                <div>{{post.message}}</div>
+            </div>
+        </div> 
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+</html> 

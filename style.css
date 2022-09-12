@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    flex-direction: raw;
+}
+img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1{
+    margin-left: 10px;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    float: left;    
+    height: 600px;
+    width: 140px;
+}
+button{
+    width: 120px;
+    height: 20px;
+    margin-top: 2px;
+}
+.imgnahui{
+    width: 100px;
+    height: 100px;
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    border: 20px;
+    border-radius: 50%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    margin-bottom: 10px;
+}
